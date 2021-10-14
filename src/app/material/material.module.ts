@@ -37,6 +37,15 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
+// table
+import { MatTableModule } from '@angular/material/table';
+
+// table paginator
+import { MatPaginatorModule } from '@angular/material/paginator';
+
+// for table data sorting
+import { MatSortModule } from '@angular/material/sort';
+
 const MaterialComponents = [
   MatButtonModule,
   MatButtonToggleModule,
@@ -61,7 +70,10 @@ const MaterialComponents = [
   MatDatepickerModule,
   MatNativeDateModule,
   MatTooltipModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatTableModule,
+  MatPaginatorModule,
+  MatSortModule
 ];
 
 @NgModule({

@@ -100,4 +100,8 @@ export class HomeComponent implements OnInit {
   selectSnackbar() {
     this.router.navigateByUrl('/mat-snackbar');
   }
+
+  selectTable() {
+    this.router.navigateByUrl('/mat-table');
+  }
 }
