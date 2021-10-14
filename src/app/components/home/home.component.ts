@@ -72,4 +72,8 @@ export class HomeComponent implements OnInit {
   selectStepper() {
     this.router.navigateByUrl('/mat-stepper');
   }
+
+  selectInput() {
+    this.router.navigateByUrl('/mat-input');
+  }
 }
