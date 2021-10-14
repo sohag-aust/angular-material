@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BadgesComponent } from './components/badges/badges.component';
 import { ButtonToggleComponent } from './components/button-toggle/button-toggle.component';
 import { ButtonComponent } from './components/button/button.component';
+import { ExpansionPanelComponent } from './components/expansion-panel/expansion-panel.component';
 import { GridListComponent } from './components/grid-list/grid-list.component';
 import { HomeComponent } from './components/home/home.component';
 import { IconComponent } from './components/icon/icon.component';
@@ -26,6 +27,7 @@ const routes: Routes = [
   {path: 'mat-menu', component: MenuComponent},
   {path: 'mat-list', component: ListComponent},
   {path: 'mat-gridList', component: GridListComponent},
+  {path: 'mat-expansionPanel', component: ExpansionPanelComponent},
 ];
 
 @NgModule({
@@ -37,5 +39,6 @@ export class AppRoutingModule { }
 export const routingComponents = [
   HomeComponent, ButtonComponent, TypographyComponent, ButtonToggleComponent,
   IconComponent, BadgesComponent, ProgressSpinnerComponent, NavbarComponent,
-  SidenavComponent, MenuComponent, ListComponent, GridListComponent
+  SidenavComponent, MenuComponent, ListComponent, GridListComponent,
+  ExpansionPanelComponent
 ];
