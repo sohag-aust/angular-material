@@ -32,4 +32,8 @@ export class HomeComponent implements OnInit {
   selectBadges() {
     this.router.navigateByUrl('/mat-badges');
   }
+
+  selectProgressSpinner() {
+    this.router.navigateByUrl('/mat-progressSpinner');
+  }
 }
