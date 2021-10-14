@@ -28,4 +28,8 @@ export class HomeComponent implements OnInit {
   selectIcon() {
     this.router.navigateByUrl('/mat-icon');
   }
+
+  selectBadges() {
+    this.router.navigateByUrl('/mat-badges');
+  }
 }
