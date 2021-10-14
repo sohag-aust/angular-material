@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AutocompleteComponent } from './components/autocomplete/autocomplete.component';
 import { BadgesComponent } from './components/badges/badges.component';
 import { ButtonToggleComponent } from './components/button-toggle/button-toggle.component';
 import { ButtonComponent } from './components/button/button.component';
@@ -37,7 +38,8 @@ const routes: Routes = [
   {path: 'mat-tab', component: TabComponent},
   {path: 'mat-stepper', component: StepperComponent},
   {path: 'mat-input', component: InputComponent},
-  {path: 'mat-select', component: SelectComponent}
+  {path: 'mat-select', component: SelectComponent},
+  {path: 'mat-autocomplete', component: AutocompleteComponent}
 ];
 
 @NgModule({
@@ -51,5 +53,5 @@ export const routingComponents = [
   IconComponent, BadgesComponent, ProgressSpinnerComponent, NavbarComponent,
   SidenavComponent, MenuComponent, ListComponent, GridListComponent,
   ExpansionPanelComponent, CardComponent, TabComponent, StepperComponent,
-  InputComponent, SelectComponent
+  InputComponent, SelectComponent, AutocompleteComponent
 ];
