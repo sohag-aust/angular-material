@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<div>
+    <span class="badge-position" matBadge="5">Notifications</span>
+    <span class="badge-position" matBadge="5" matBadgePosition="below before">Notifications</span>
+    <span class="badge-position" matBadge="5" matBadgePosition="below after">Notifications</span>
+    <span class="badge-position" matBadge="5" matBadgePosition="above before">Notifications</span>
+    <span class="badge-position" matBadge="5" matBadgeColor="accent">Notifications</span>
+    <span class="badge-position" matBadge="5" matBadgeColor="warn">Notifications</span>
+
+    <span class="badge-position" [matBadge]="notifications" matBadgeOverlap="false" matBadgeColor="warn">Notifications</span>
+    <span class="badge-position" [matBadge]="zeroNotifications" [matBadgeHidden]="zeroNotifications === 0" matBadgeColor="warn">Notifications</span>
+</div>

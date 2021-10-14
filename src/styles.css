@@ -2,3 +2,81 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.background{
+    background-color: rgba(233, 215, 55, 0.863);
+}
+
+.badge-position{
+    margin-right: 60px;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+.navbar span {
+    margin: 10px;
+}
+
+mat-sidenav-container{
+    height: 500px;
+}
+
+mat-sidenav, mat-sidenav-content {
+    padding: 16px;
+}
+
+mat-sidenav{
+    background-color: lightcoral;
+    width: 200px;
+}
+
+mat-sidenav-content{
+    background-color: rgba(80, 187, 66, 0.973);
+}
+
+.lazyMenu{
+    margin-left: 300px;
+    /* text-align: center; */
+}
+
+.mat-grid-tile{
+    background-color: rgb(97, 196, 196);
+    /* margin: 10px; */
+}
+
+.example-card{
+    margin: auto;
+    text-align: center;
+    width: 25%;
+}
+
+.example-card img{
+    width: 200px;
+    height: 250px;
+}
+
+.example-header-image {
+    background-image: url('https://resources.pulse.icc-cricket.com/ICC/photo/2018/07/16/d9abee5f-521e-4d50-9e59-8f3e1559ac6c/ICC-Cricket-World-Cup-CS-_8.jpg');
+    background-size: cover;
+}
+
+.mat-tab-group{
+    background-color: rgb(24, 155, 111);
+    color: red;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 15px;
+    padding: 10px;
+}
+
+mat-form-field{
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+/* for table */
+table {
+    width: 100%;
+}
