@@ -18,6 +18,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
 import { SelectComponent } from './components/select/select.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { SnackbarComponent } from './components/snackbar/snackbar.component';
 import { StepperComponent } from './components/stepper/stepper.component';
 import { TabComponent } from './components/tab/tab.component';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
@@ -45,7 +46,8 @@ const routes: Routes = [
   {path: 'mat-autocomplete', component: AutocompleteComponent},
   {path: 'mat-checkBox-radioButton', component: CheckboxRadiobuttonComponent},
   {path: 'mat-datepicker', component: DatepickerComponent},
-  {path: 'mat-tooltip', component: TooltipComponent}
+  {path: 'mat-tooltip', component: TooltipComponent},
+  {path: 'mat-snackbar', component: SnackbarComponent}
 ];
 
 @NgModule({
@@ -60,5 +62,5 @@ export const routingComponents = [
   SidenavComponent, MenuComponent, ListComponent, GridListComponent,
   ExpansionPanelComponent, CardComponent, TabComponent, StepperComponent,
   InputComponent, SelectComponent, AutocompleteComponent, CheckboxRadiobuttonComponent,
-  DatepickerComponent, TooltipComponent
+  DatepickerComponent, TooltipComponent, SnackbarComponent
 ];

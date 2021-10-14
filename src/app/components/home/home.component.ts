@@ -96,4 +96,8 @@ export class HomeComponent implements OnInit {
   selectTooltip() {
     this.router.navigateByUrl('/mat-tooltip');
   }
+
+  selectSnackbar() {
+    this.router.navigateByUrl('/mat-snackbar');
+  }
 }
