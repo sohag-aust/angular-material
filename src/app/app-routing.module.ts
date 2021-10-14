@@ -20,6 +20,7 @@ import { SelectComponent } from './components/select/select.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { StepperComponent } from './components/stepper/stepper.component';
 import { TabComponent } from './components/tab/tab.component';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { TypographyComponent } from './components/typography/typography.component';
 
 const routes: Routes = [
@@ -43,7 +44,8 @@ const routes: Routes = [
   {path: 'mat-select', component: SelectComponent},
   {path: 'mat-autocomplete', component: AutocompleteComponent},
   {path: 'mat-checkBox-radioButton', component: CheckboxRadiobuttonComponent},
-  {path: 'mat-datepicker', component: DatepickerComponent}
+  {path: 'mat-datepicker', component: DatepickerComponent},
+  {path: 'mat-tooltip', component: TooltipComponent}
 ];
 
 @NgModule({
@@ -58,5 +60,5 @@ export const routingComponents = [
   SidenavComponent, MenuComponent, ListComponent, GridListComponent,
   ExpansionPanelComponent, CardComponent, TabComponent, StepperComponent,
   InputComponent, SelectComponent, AutocompleteComponent, CheckboxRadiobuttonComponent,
-  DatepickerComponent
+  DatepickerComponent, TooltipComponent
 ];
