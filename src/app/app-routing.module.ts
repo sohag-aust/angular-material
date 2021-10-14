@@ -5,6 +5,7 @@ import { BadgesComponent } from './components/badges/badges.component';
 import { ButtonToggleComponent } from './components/button-toggle/button-toggle.component';
 import { ButtonComponent } from './components/button/button.component';
 import { CardComponent } from './components/card/card.component';
+import { CheckboxRadiobuttonComponent } from './components/checkbox-radiobutton/checkbox-radiobutton.component';
 import { ExpansionPanelComponent } from './components/expansion-panel/expansion-panel.component';
 import { GridListComponent } from './components/grid-list/grid-list.component';
 import { HomeComponent } from './components/home/home.component';
@@ -39,7 +40,8 @@ const routes: Routes = [
   {path: 'mat-stepper', component: StepperComponent},
   {path: 'mat-input', component: InputComponent},
   {path: 'mat-select', component: SelectComponent},
-  {path: 'mat-autocomplete', component: AutocompleteComponent}
+  {path: 'mat-autocomplete', component: AutocompleteComponent},
+  {path: 'mat-checkBox-radioButton', component: CheckboxRadiobuttonComponent}
 ];
 
 @NgModule({
@@ -53,5 +55,5 @@ export const routingComponents = [
   IconComponent, BadgesComponent, ProgressSpinnerComponent, NavbarComponent,
   SidenavComponent, MenuComponent, ListComponent, GridListComponent,
   ExpansionPanelComponent, CardComponent, TabComponent, StepperComponent,
-  InputComponent, SelectComponent, AutocompleteComponent
+  InputComponent, SelectComponent, AutocompleteComponent, CheckboxRadiobuttonComponent
 ];
