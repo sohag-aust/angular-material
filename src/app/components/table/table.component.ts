@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 export interface PeriodicElement {
   name: string;
@@ -22,6 +22,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 import { MatTableDataSource } from '@angular/material/table';
 
+// paginator
+import { MatPaginator } from '@angular/material/paginator';
+
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
@@ -30,9 +33,6 @@ import { MatTableDataSource } from '@angular/material/table';
 export class TableComponent implements OnInit {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
   // for table
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
@@ -46,4 +46,13 @@ export class TableComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
   // filtering ends
+
+  // paginator
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  
+
+  ngOnInit(): void {
+    // this.dataSource.paginator = this.paginator;
+    setTimeout(() => this.dataSource.paginator = this.paginator); // this one work for paginator ; refs: https://stackoverflow.com/questions/48785965/angular-matpaginator-doesnt-get-initialized
+  }
 }
