@@ -76,4 +76,8 @@ export class HomeComponent implements OnInit {
   selectInput() {
     this.router.navigateByUrl('/mat-input');
   }
+
+  select_SelectModule() {
+    this.router.navigateByUrl('/mat-select');
+  }
 }
