@@ -21,4 +21,7 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl('/mat-typography');
   }
   
+  selectButtonToggle() {
+    this.router.navigateByUrl('/mat-buttonToggle');
+  }
 }
