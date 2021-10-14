@@ -92,4 +92,8 @@ export class HomeComponent implements OnInit {
   selectDatepicker() {
     this.router.navigateByUrl('/mat-datepicker');
   }
+
+  selectTooltip() {
+    this.router.navigateByUrl('/mat-tooltip');
+  }
 }
