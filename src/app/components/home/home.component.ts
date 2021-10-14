@@ -40,4 +40,8 @@ export class HomeComponent implements OnInit {
   selectNavbar() {
     this.router.navigateByUrl('/mat-navbar');
   }
+
+  selectSideNav() {
+    this.router.navigateByUrl('/mat-sidenav');
+  }
 }
