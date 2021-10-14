@@ -52,4 +52,8 @@ export class HomeComponent implements OnInit {
   selectList() {
     this.router.navigateByUrl('/mat-list');
   }
+
+  selectGridList() {
+    this.router.navigateByUrl('/mat-gridList');
+  }
 }
