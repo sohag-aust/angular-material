@@ -56,4 +56,8 @@ export class HomeComponent implements OnInit {
   selectGridList() {
     this.router.navigateByUrl('/mat-gridList');
   }
+
+  selectExpansionPanel() {
+    this.router.navigateByUrl('/mat-expansionPanel');
+  }
 }
