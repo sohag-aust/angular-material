@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BadgesComponent } from './components/badges/badges.component';
 import { ButtonToggleComponent } from './components/button-toggle/button-toggle.component';
 import { ButtonComponent } from './components/button/button.component';
+import { GridListComponent } from './components/grid-list/grid-list.component';
 import { HomeComponent } from './components/home/home.component';
 import { IconComponent } from './components/icon/icon.component';
 import { ListComponent } from './components/list/list.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'mat-sidenav', component: SidenavComponent},
   {path: 'mat-menu', component: MenuComponent},
   {path: 'mat-list', component: ListComponent},
+  {path: 'mat-gridList', component: GridListComponent},
 ];
 
 @NgModule({
@@ -35,5 +37,5 @@ export class AppRoutingModule { }
 export const routingComponents = [
   HomeComponent, ButtonComponent, TypographyComponent, ButtonToggleComponent,
   IconComponent, BadgesComponent, ProgressSpinnerComponent, NavbarComponent,
-  SidenavComponent, MenuComponent, ListComponent
+  SidenavComponent, MenuComponent, ListComponent, GridListComponent
 ];
