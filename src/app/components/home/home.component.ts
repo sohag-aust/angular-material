@@ -64,4 +64,8 @@ export class HomeComponent implements OnInit {
   selectCard() {
     this.router.navigateByUrl('/mat-card');
   }
+
+  selectTab() {
+    this.router.navigateByUrl('/mat-tab');
+  }
 }
