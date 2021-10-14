@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<div>
+    <mat-button-toggle #toggleBtn>Toggle</mat-button-toggle>
+    <h2>Toggle Button is checked : {{toggleBtn.checked}}</h2> 
+</div>
+
+<div>
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="react">React</mat-button-toggle>
+        <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <br>
+    <h2>Toggle Group Value : {{toggleGroup.value}}</h2>
+
+    <br>
+    <h1>select multiple button group</h1>
+    <mat-button-toggle-group #toggleGroupMultiple="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="react">React</mat-button-toggle>
+        <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <br>
+    <h2>Toggle Group Multiple Value : {{toggleGroupMultiple.value}}</h2>
+</div>
