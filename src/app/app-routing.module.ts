@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { IconComponent } from './components/icon/icon.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { TypographyComponent } from './components/typography/typography.component';
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'mat-badges', component: BadgesComponent},
   {path: 'mat-progressSpinner', component: ProgressSpinnerComponent},
   {path: 'mat-navbar', component: NavbarComponent},
+  {path: 'mat-sidenav', component: SidenavComponent},
 ];
 
 @NgModule({
@@ -28,5 +30,6 @@ export class AppRoutingModule { }
 
 export const routingComponents = [
   HomeComponent, ButtonComponent, TypographyComponent, ButtonToggleComponent,
-  IconComponent, BadgesComponent, ProgressSpinnerComponent, NavbarComponent
+  IconComponent, BadgesComponent, ProgressSpinnerComponent, NavbarComponent,
+  SidenavComponent
 ];

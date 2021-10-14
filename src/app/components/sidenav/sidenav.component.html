@@ -1,0 +1,12 @@
+<app-header></app-header>
+
+<mat-sidenav-container>
+    <mat-sidenav mode="side" [(opened)]="openedSideNav">
+      SideNav
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      Main
+      <button (click)="toggleOpenSideNav()">Toggle Opened</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
