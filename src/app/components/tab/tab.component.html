@@ -1,0 +1,9 @@
+<app-header></app-header>
+
+<mat-tab-group class="mat-tab-group" #tabRef (selectedTabChange)="logChange(tabRef.selectedIndex)">
+    <mat-tab label="angular">Angular Content</mat-tab>
+    <mat-tab label="react">React Content</mat-tab>
+    <mat-tab label="vue">Vue Content</mat-tab>
+</mat-tab-group>
+
+<h2>Tab Ref : {{tabRef.selectedIndex}}</h2>
