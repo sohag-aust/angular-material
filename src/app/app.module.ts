@@ -9,6 +9,9 @@ import { HeaderComponent } from './components/header/header.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+// virtual scrolling module
+import { ScrollingModule } from '@angular/cdk/scrolling';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,18 @@
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid maroon;
+    box-sizing: border-box;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+
+    /* for virtual scrolling */
+    height: 100px;
+}
+
+.virtual-scrolling-container {
+    height: 400px;
+}
