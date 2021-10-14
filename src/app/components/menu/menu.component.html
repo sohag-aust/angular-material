@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<mat-menu #appMenu="matMenu" > <!-- xPosition="before" yPosition="below" -->
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">Frontend</button>
+    <button mat-menu-item>Backend</button>
+</mat-menu>
+
+<button mat-raised-button color="primary" [matMenuTriggerFor]="appMenu">Menu</button>
+
+
+  <!-- Nested Menu -->
+  <mat-menu #subMenu="matMenu">
+    <button mat-menu-item>Angular</button>
+    <button mat-menu-item>React</button>
+    <button mat-menu-item>Vue</button>
+  </mat-menu>
+
+  <!-- Lazy Menu -->
+  <mat-menu  #lazyMenu="matMenu">
+    <ng-template matMenuContent>
+      <button mat-menu-item>Settings</button>
+      <button mat-menu-item>Log out</button>
+    </ng-template>
+  </mat-menu>
+
+  <button class="lazyMenu" mat-raised-button color="warn" [matMenuTriggerFor]="lazyMenu">Shohag</button>

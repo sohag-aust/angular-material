@@ -44,4 +44,8 @@ export class HomeComponent implements OnInit {
   selectSideNav() {
     this.router.navigateByUrl('/mat-sidenav');
   }
+
+  selectMenu() {
+    this.router.navigateByUrl('/mat-menu');
+  }
 }

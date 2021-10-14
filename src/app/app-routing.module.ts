@@ -5,6 +5,7 @@ import { ButtonToggleComponent } from './components/button-toggle/button-toggle.
 import { ButtonComponent } from './components/button/button.component';
 import { HomeComponent } from './components/home/home.component';
 import { IconComponent } from './components/icon/icon.component';
+import { MenuComponent } from './components/menu/menu.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'mat-progressSpinner', component: ProgressSpinnerComponent},
   {path: 'mat-navbar', component: NavbarComponent},
   {path: 'mat-sidenav', component: SidenavComponent},
+  {path: 'mat-menu', component: MenuComponent},
 ];
 
 @NgModule({
@@ -31,5 +33,5 @@ export class AppRoutingModule { }
 export const routingComponents = [
   HomeComponent, ButtonComponent, TypographyComponent, ButtonToggleComponent,
   IconComponent, BadgesComponent, ProgressSpinnerComponent, NavbarComponent,
-  SidenavComponent
+  SidenavComponent, MenuComponent
 ];
