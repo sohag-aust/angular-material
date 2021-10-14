@@ -68,4 +68,8 @@ export class HomeComponent implements OnInit {
   selectTab() {
     this.router.navigateByUrl('/mat-tab');
   }
+
+  selectStepper() {
+    this.router.navigateByUrl('/mat-stepper');
+  }
 }
