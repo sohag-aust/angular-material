@@ -60,4 +60,8 @@ export class HomeComponent implements OnInit {
   selectExpansionPanel() {
     this.router.navigateByUrl('/mat-expansionPanel');
   }
+
+  selectCard() {
+    this.router.navigateByUrl('/mat-card');
+  }
 }
