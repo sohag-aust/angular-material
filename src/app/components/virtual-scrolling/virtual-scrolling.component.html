@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<!-- normal element show -->
+<!-- <div class="number" *ngFor="let number of numbers;">
+    <h4>Number : {{number}}</h4>
+</div> -->
+
+<cdk-virtual-scroll-viewport class="virtual-scrolling-container" itemSize="100">
+    <div class="number" *cdkVirtualFor="let number of numbers;">
+        <h4>Number : {{number}}</h4>
+    </div>
+</cdk-virtual-scroll-viewport>
+

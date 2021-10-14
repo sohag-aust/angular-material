@@ -104,4 +104,8 @@ export class HomeComponent implements OnInit {
   selectTable() {
     this.router.navigateByUrl('/mat-table');
   }
+
+  selectVirtualScrolling() {
+    this.router.navigateByUrl('/mat-virtualScrolling');
+  }
 }

@@ -24,6 +24,7 @@ import { TabComponent } from './components/tab/tab.component';
 import { TableComponent } from './components/table/table.component';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { TypographyComponent } from './components/typography/typography.component';
+import { VirtualScrollingComponent } from './components/virtual-scrolling/virtual-scrolling.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -49,7 +50,8 @@ const routes: Routes = [
   {path: 'mat-datepicker', component: DatepickerComponent},
   {path: 'mat-tooltip', component: TooltipComponent},
   {path: 'mat-snackbar', component: SnackbarComponent},
-  {path: 'mat-table', component: TableComponent}
+  {path: 'mat-table', component: TableComponent},
+  {path: 'mat-virtualScrolling', component: VirtualScrollingComponent}
 ];
 
 @NgModule({
@@ -64,5 +66,6 @@ export const routingComponents = [
   SidenavComponent, MenuComponent, ListComponent, GridListComponent,
   ExpansionPanelComponent, CardComponent, TabComponent, StepperComponent,
   InputComponent, SelectComponent, AutocompleteComponent, CheckboxRadiobuttonComponent,
-  DatepickerComponent, TooltipComponent, SnackbarComponent, TableComponent
+  DatepickerComponent, TooltipComponent, SnackbarComponent, TableComponent,
+  VirtualScrollingComponent
 ];
