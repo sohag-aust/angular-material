@@ -39,4 +39,11 @@ export class TableComponent implements OnInit {
   // dataSource = ELEMENT_DATA;
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
+
+  // filtering starts
+  applyFilter = (event: any) => {
+    const filterValue = event.target.value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+  // filtering ends
 }
