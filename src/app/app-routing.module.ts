@@ -13,6 +13,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { StepperComponent } from './components/stepper/stepper.component';
 import { TabComponent } from './components/tab/tab.component';
 import { TypographyComponent } from './components/typography/typography.component';
 
@@ -31,7 +32,8 @@ const routes: Routes = [
   {path: 'mat-gridList', component: GridListComponent},
   {path: 'mat-expansionPanel', component: ExpansionPanelComponent},
   {path: 'mat-card', component: CardComponent},
-  {path: 'mat-tab', component: TabComponent}
+  {path: 'mat-tab', component: TabComponent},
+  {path: 'mat-stepper', component: StepperComponent}
 ];
 
 @NgModule({
@@ -44,5 +46,5 @@ export const routingComponents = [
   HomeComponent, ButtonComponent, TypographyComponent, ButtonToggleComponent,
   IconComponent, BadgesComponent, ProgressSpinnerComponent, NavbarComponent,
   SidenavComponent, MenuComponent, ListComponent, GridListComponent,
-  ExpansionPanelComponent, CardComponent, TabComponent
+  ExpansionPanelComponent, CardComponent, TabComponent, StepperComponent
 ];

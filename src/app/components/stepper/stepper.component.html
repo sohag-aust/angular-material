@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<mat-horizontal-stepper>
+    <mat-step label="Shipping Address">Shipping Address Details</mat-step>
+    <mat-step label="Billing Address">
+      Billing Adress Details
+
+      <br>
+      <button mat-button matStepperPrevious color="warn">Previous</button>
+      <button mat-button matStepperNext color="accent">Next</button>
+    </mat-step>
+    <mat-step label="Place Order">Place Order Details</mat-step>
+</mat-horizontal-stepper>
+
+  <br><br><br>
+
+  <!-- liner stepper -->
+<mat-horizontal-stepper linear>
+    <mat-step label="Shipping Address" completed=true>Shipping Address Details</mat-step>
+    <mat-step label="Billing Address" completed=false>
+      Billing Adress Details
+
+      <br>
+      <button mat-button matStepperPrevious color="warn">Previous</button>
+      <button mat-button matStepperNext color="accent">Next</button>
+    </mat-step>
+    <mat-step label="Place Order" completed=false>Place Order Details</mat-step>
+</mat-horizontal-stepper>
