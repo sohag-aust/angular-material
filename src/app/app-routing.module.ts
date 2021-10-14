@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ButtonToggleComponent } from './components/button-toggle/button-toggle.component';
 import { ButtonComponent } from './components/button/button.component';
 import { HomeComponent } from './components/home/home.component';
+import { IconComponent } from './components/icon/icon.component';
 import { TypographyComponent } from './components/typography/typography.component';
 
 const routes: Routes = [
@@ -10,6 +11,7 @@ const routes: Routes = [
   {path: 'mat-button', component: ButtonComponent},
   {path: 'mat-typography', component: TypographyComponent},
   {path: 'mat-buttonToggle', component: ButtonToggleComponent},
+  {path: 'mat-icon', component: IconComponent},
 ];
 
 @NgModule({
@@ -19,5 +21,6 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 export const routingComponents = [
-  HomeComponent, ButtonComponent, TypographyComponent, ButtonToggleComponent
+  HomeComponent, ButtonComponent, TypographyComponent, ButtonToggleComponent,
+  IconComponent
 ];
