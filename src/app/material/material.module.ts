@@ -43,6 +43,9 @@ import { MatTableModule } from '@angular/material/table';
 // table paginator
 import { MatPaginatorModule } from '@angular/material/paginator';
 
+// for table data sorting
+import { MatSortModule } from '@angular/material/sort';
+
 const MaterialComponents = [
   MatButtonModule,
   MatButtonToggleModule,
@@ -69,7 +72,8 @@ const MaterialComponents = [
   MatTooltipModule,
   MatSnackBarModule,
   MatTableModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+  MatSortModule
 ];
 
 @NgModule({

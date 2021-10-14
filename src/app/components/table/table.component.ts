@@ -25,6 +25,9 @@ import { MatTableDataSource } from '@angular/material/table';
 // paginator
 import { MatPaginator } from '@angular/material/paginator';
 
+// sort
+import { MatSort } from '@angular/material/sort';
+
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
@@ -50,9 +53,15 @@ export class TableComponent implements OnInit {
   // paginator
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   
+  // sort
+  @ViewChild(MatSort) sort!: MatSort;
+  
 
   ngOnInit(): void {
     // this.dataSource.paginator = this.paginator;
     setTimeout(() => this.dataSource.paginator = this.paginator); // this one work for paginator ; refs: https://stackoverflow.com/questions/48785965/angular-matpaginator-doesnt-get-initialized
+  
+    // sort : it works either ascending or descending
+    setTimeout(() => this.dataSource.sort = this.sort);
   }
 }
