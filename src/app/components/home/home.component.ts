@@ -84,4 +84,8 @@ export class HomeComponent implements OnInit {
   selectAutoComplete() {
     this.router.navigateByUrl('/mat-autocomplete');
   }
+
+  selectCheckBoxAndRadioButton() {
+    this.router.navigateByUrl('/mat-checkBox-radioButton');
+  }
 }
