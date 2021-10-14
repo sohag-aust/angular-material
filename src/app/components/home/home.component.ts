@@ -80,4 +80,8 @@ export class HomeComponent implements OnInit {
   select_SelectModule() {
     this.router.navigateByUrl('/mat-select');
   }
+
+  selectAutoComplete() {
+    this.router.navigateByUrl('/mat-autocomplete');
+  }
 }
