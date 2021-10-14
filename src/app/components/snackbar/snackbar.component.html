@@ -1,0 +1,12 @@
+<app-header></app-header>
+
+<h1>Snackbar</h1>
+
+<button mat-raised-button color="warn" (click)="openSnackBar('Item deleted')">
+    Show snackbar
+</button>
+
+<br><br>
+<button mat-raised-button color="warn" (click)="openSnackBarAction('Item deleted', 'Dismiss')">
+    Show snackbar with action
+</button>
