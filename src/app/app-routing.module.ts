@@ -21,6 +21,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
 import { StepperComponent } from './components/stepper/stepper.component';
 import { TabComponent } from './components/tab/tab.component';
+import { TableComponent } from './components/table/table.component';
 import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { TypographyComponent } from './components/typography/typography.component';
 
@@ -47,7 +48,8 @@ const routes: Routes = [
   {path: 'mat-checkBox-radioButton', component: CheckboxRadiobuttonComponent},
   {path: 'mat-datepicker', component: DatepickerComponent},
   {path: 'mat-tooltip', component: TooltipComponent},
-  {path: 'mat-snackbar', component: SnackbarComponent}
+  {path: 'mat-snackbar', component: SnackbarComponent},
+  {path: 'mat-table', component: TableComponent}
 ];
 
 @NgModule({
@@ -62,5 +64,5 @@ export const routingComponents = [
   SidenavComponent, MenuComponent, ListComponent, GridListComponent,
   ExpansionPanelComponent, CardComponent, TabComponent, StepperComponent,
   InputComponent, SelectComponent, AutocompleteComponent, CheckboxRadiobuttonComponent,
-  DatepickerComponent, TooltipComponent, SnackbarComponent
+  DatepickerComponent, TooltipComponent, SnackbarComponent, TableComponent
 ];
