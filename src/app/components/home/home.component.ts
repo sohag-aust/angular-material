@@ -36,4 +36,8 @@ export class HomeComponent implements OnInit {
   selectProgressSpinner() {
     this.router.navigateByUrl('/mat-progressSpinner');
   }
+
+  selectNavbar() {
+    this.router.navigateByUrl('/mat-navbar');
+  }
 }
