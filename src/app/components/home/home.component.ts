@@ -48,4 +48,8 @@ export class HomeComponent implements OnInit {
   selectMenu() {
     this.router.navigateByUrl('/mat-menu');
   }
+
+  selectList() {
+    this.router.navigateByUrl('/mat-list');
+  }
 }
