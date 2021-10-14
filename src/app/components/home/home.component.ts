@@ -88,4 +88,8 @@ export class HomeComponent implements OnInit {
   selectCheckBoxAndRadioButton() {
     this.router.navigateByUrl('/mat-checkBox-radioButton');
   }
+
+  selectDatepicker() {
+    this.router.navigateByUrl('/mat-datepicker');
+  }
 }
